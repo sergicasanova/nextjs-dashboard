@@ -50,8 +50,8 @@ export default async function LatestInvoices() { // Remove props
                   className={clsx(
                     `${lusitana.className} truncate text-sm font-medium md:text-base`,
                     {
-                      'text-green-500': invoice.amount === 'paid',
-                      'text-red-500': invoice.amount === 'pending',
+                      'text-green-500': invoice.status === 'paid',
+                      'text-red-500': invoice.status === 'pending',
                     }
                   )}
                 >

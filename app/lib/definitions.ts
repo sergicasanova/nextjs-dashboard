@@ -37,6 +37,7 @@ export type LatestInvoice = {
   image_url: string;
   email: string;
   amount: string;
+  status: 'pending' | 'paid';
 };
 
 // La base de datos devuelve un número para el importe, pero después lo formateamos a una cadena con la función formatCurrency
